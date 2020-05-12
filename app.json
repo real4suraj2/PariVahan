@@ -25,8 +25,8 @@
       "versionCode": 1,
       "config": {
         "googleSignIn": {
-          "apiKey": "746591055474-vcnhs3ca5dndiolrkdgtcr3lsb44f6gs.apps.googleusercontent.com",
-          "certificateHash": "CE70C5A6A9ACD5309410360B454241DF3C5E7686"
+          "apiKey": "",
+          "certificateHash": ""
         }
       }
     }
