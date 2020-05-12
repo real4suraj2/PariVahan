@@ -13,5 +13,7 @@ web-report/
 .eslintrc
 yarn-error.log
 yarn.lock
+constants/firebase-config.js
+constants/social-config.js
 # macOS
 .DS_Store
