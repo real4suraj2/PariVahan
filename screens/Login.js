@@ -15,15 +15,11 @@ import { db } from "../constants/firebase-config";
 import { LinearGradient } from "expo-linear-gradient";
 import { Block, Text, Button } from "expo-ui-kit";
 
+import {FACEBOOK_APP_ID, GOOGLE_ANDROID_ID, GOOGLE_ANDROID_ID_STANDALONE, GOOGLE_IOS_ID, API_URL} from '../config/social-config';
+
 import { navigationReset } from "../helper/navigation-reset";
 
 const { width, height } = Dimensions.get("window");
-
-const FACEBOOK_APP_ID = "834072043737963";
-const GOOGLE_IOS_ID = "";
-const GOOGLE_ANDROID_ID =
-	"746591055474-uva2rfpk4cje6pe57ottjpcnirfaifab.apps.googleusercontent.com";
-const API_URL = "http://5e08ac18434a370014168b98.mockapi.io/api/v1";
 
 export default ({ navigation }) => {
 	const [loading, setLoading] = useState(false);
@@ -78,6 +74,7 @@ export default ({ navigation }) => {
 			const { type, accessToken, user } = await Google.logInAsync({
 				iosClientId: GOOGLE_IOS_ID,
 				androidClientId: GOOGLE_ANDROID_ID,
+				androidStandaloneAppClientId: GOOGLE_ANDROID_ID_STANDALONE,
 				scopes: ["profile", "email"],
 			});
 			setLoading(false);

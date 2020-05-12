@@ -1,15 +1,11 @@
 {
   "expo": {
-    "name": "Blank Template",
+    "name": "PariVahan",
     "slug": "PariVahan",
     "privacy": "public",
     "sdkVersion": "36.0.0",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
-    "version": "1.0.0",
+    "platforms": ["android"],
+    "version": "1.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -20,11 +16,19 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.SurajApps.PariVahan",
+      "versionCode": 1,
+      "config": {
+        "googleSignIn": {
+          "apiKey": "746591055474-vcnhs3ca5dndiolrkdgtcr3lsb44f6gs.apps.googleusercontent.com",
+          "certificateHash": "CE70C5A6A9ACD5309410360B454241DF3C5E7686"
+        }
+      }
     }
   }
 }
