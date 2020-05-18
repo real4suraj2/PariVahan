@@ -21,7 +21,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "com.SurajApps.PariVahan",
+      "package": "com.surajapps.parivahan",
       "versionCode": 1,
       "config": {
         "googleSignIn": {
